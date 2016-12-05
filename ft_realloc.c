@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 #include <stdlib.h>
 
-char    *ft_realloc(char *s, size_t len)
+inline char    *ft_realloc(char *s, size_t len)
 {
     char    *new;
 
