@@ -13,14 +13,14 @@
 #include "libft.h"
 #include <stdlib.h>
 
-inline char    *ft_realloc(char *s, size_t len)
+char	*ft_realloc(char *s, size_t len)
 {
-    char    *new;
+	char	*new;
 
-    if (!s)
-        return (NULL);
-    if (!(new = (char *)ft_memalloc(sizeof(char) * len)))
-        return (NULL);
-    ft_memcpy(new, s, len);
-    return (new);
+	if (!s)
+		return (NULL);
+	if (!(new = (char *)ft_memalloc(sizeof(char) * len)))
+		return (NULL);
+	ft_memcpy(new, s, len);
+	return (new);
 }
